@@ -1,0 +1,22 @@
+# AERONIX Website Robots.txt
+# https://aeronix.kz
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aeronix.kz/sitemap.xml
+
+# Block admin/private areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all crawlers to index images
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Yandexbot
+Allow: /
+
+User-agent: Mail.RU_Bot
+Allow: /

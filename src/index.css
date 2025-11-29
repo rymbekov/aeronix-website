@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Performance optimizations */
+  img {
+    content-visibility: auto;
+  }
+  
+  /* Smooth scrolling with hardware acceleration */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* GPU acceleration for transforms and animations */
+  .transform-gpu {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Optimize image rendering */
+  .optimize-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
