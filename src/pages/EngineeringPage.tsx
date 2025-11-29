@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, Factory, Settings, Wind, ThermometerSnowflake, Wrench, CheckCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 import WhatsAppIcon from '../components/WhatsAppIcon';
@@ -73,13 +74,13 @@ export default function EngineeringPage() {
                 {t('engineering.hero.location')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/contacts"
+                <Link
+                  to="/contacts"
                   className="inline-flex items-center justify-center gap-2 bg-white text-aeronix-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   {t('engineering.hero.cta1')}
-                </a>
+                </Link>
                 <a
                   href={`https://wa.me/77780808404?text=${encodeURIComponent(t('whatsapp.engineering'))}`}
                   target="_blank"

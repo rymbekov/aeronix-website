@@ -1,6 +1,7 @@
 import { Wind, Shield, Zap, Phone, Factory, Globe, Award, TrendingUp, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 // import Gallery from '../components/Gallery';
 
@@ -74,12 +75,12 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
             >
-              <a href="/cooperation" className="bg-white text-aeronix-blue px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
+              <Link to="/cooperation" className="bg-white text-aeronix-blue px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
                 {t('hero.becomeDealer')}
-              </a>
-              <a href="/contacts" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition transform hover:scale-105">
+              </Link>
+              <Link to="/contacts" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition transform hover:scale-105">
                 {t('hero.requestPrice')}
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -277,9 +278,9 @@ export default function HomePage() {
           </motion.div>
 
           <div className="text-center mt-12">
-            <a href="/products" className="inline-block bg-aeronix-blue text-white px-12 py-4 rounded-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">
+            <Link to="/products" className="inline-block bg-aeronix-blue text-white px-12 py-4 rounded-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">
               {t('series.viewAll')}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -494,9 +495,9 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <a href="/cooperation" className="inline-block bg-white text-aeronix-blue px-12 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
+            <Link to="/cooperation" className="inline-block bg-white text-aeronix-blue px-12 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
               {t('dealers.cta')}
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -568,9 +569,9 @@ export default function HomePage() {
               {t('cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/cooperation" className="bg-white text-aeronix-blue px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
+              <Link to="/cooperation" className="bg-white text-aeronix-blue px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105 shadow-xl">
                 {t('cta.becomeDealer')}
-              </a>
+              </Link>
               <a href="tel:+77780808404" className="border-2 border-white px-10 py-4 rounded-lg font-semibold hover:bg-white/10 transition transform hover:scale-105 flex items-center justify-center gap-2">
                 <Phone className="w-5 h-5" />
                 {t('cta.phone')}
