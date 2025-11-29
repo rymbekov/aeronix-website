@@ -34,7 +34,6 @@ export default function ProductsPage() {
       <SEO 
         title={t('seo.products.title')}
         description={t('seo.products.description')}
-        keywords={t('seo.products.keywords')}
       />
 
       <div className="py-12 bg-gradient-to-b from-gray-50 to-white min-h-screen">

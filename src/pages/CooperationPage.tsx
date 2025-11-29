@@ -58,13 +58,10 @@ export default function CooperationPage() {
 
   return (
     <>
-      <SEO 
-        title={t('seo.cooperation.title')}
-        description={t('seo.cooperation.description')}
-        keywords={t('seo.cooperation.keywords')}
-      />
-
-      <div className="min-h-screen bg-white">
+        <SEO 
+          title={t('seo.cooperation.title')}
+          description={t('seo.cooperation.description')}
+        />      <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-aeronix-navy via-blue-900 to-aeronix-blue text-white py-16 md:py-20">
           <div className="container mx-auto px-4">

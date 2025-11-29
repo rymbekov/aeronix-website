@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
@@ -22,20 +21,18 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <HelmetProvider>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/engineering" element={<EngineeringPage />} />
-            <Route path="/cooperation" element={<CooperationPage />} />
-            <Route path="/contacts" element={<ContactsPage />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </HelmetProvider>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/engineering" element={<EngineeringPage />} />
+          <Route path="/cooperation" element={<CooperationPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

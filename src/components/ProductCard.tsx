@@ -16,7 +16,7 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
 
   return (
     <div
-      className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300"
+      className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-blue-300"
       onClick={onClick}
     >
       {/* Image Container */}
