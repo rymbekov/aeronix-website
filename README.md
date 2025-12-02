@@ -78,7 +78,7 @@ npm run preview
 
 ## 📞 Контакты
 
-- **WhatsApp**: [+7 778 080 84 04](https://wa.me/77780808404)
+- **WhatsApp**: [+7 775 080 84 48](https://wa.me/77750808448)
 - **Email**: aeronixastana@mail.ru
 - **Адрес**: [2GIS](https://2gis.kz/astana/firm/70000001109767790) — г. Астана, ЖК Бағыстан
 

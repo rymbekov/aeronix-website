@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
             <div className="space-y-2 text-sm">
               <a
-                href="tel:+77780808404"
+                href="tel:+77750808448"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               >
                 <Phone className="w-4 h-4" />
@@ -83,7 +83,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Мессенджеры</h3>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/77780808404"
+                href="https://wa.me/77750808448"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center transition-colors"

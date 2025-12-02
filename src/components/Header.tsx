@@ -29,9 +29,9 @@ export default function Header() {
         <div className="border-b border-gray-100 py-2">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-6">
-              <a href="tel:+77780808404" className="flex items-center gap-2 text-gray-600 hover:text-aeronix-blue transition-colors">
+              <a href="tel:+77750808448" className="flex items-center gap-2 text-gray-600 hover:text-aeronix-blue transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>+7 778 080 84 04</span>
+                <span>+7 775 080 84 48</span>
               </a>
               <a href="mailto:aeronixastana@mail.ru" className="flex items-center gap-2 text-gray-600 hover:text-aeronix-blue transition-colors">
                 <Mail className="w-4 h-4" />

@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle, Package, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Product } from '../data/products';
 import { generateSrcSet, generateSizes, getLargeImage, getSmallImage } from '../utils/imageUtils';
@@ -22,6 +22,19 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
     return `Здравствуйте! Хочу узнать цену на клапан ${productName}.\n\nКоличество: \nГород: \nКонтактное лицо: \nТелефон: `;
   };
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const thumbnailsRef = useRef<HTMLDivElement>(null);
+  const thumbnailRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  // Scroll thumbnail into view when selected
+  useEffect(() => {
+    if (thumbnailRefs.current[selectedImageIndex]) {
+      thumbnailRefs.current[selectedImageIndex]?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
+    }
+  }, [selectedImageIndex]);
 
   // Handle ESC key
   useEffect(() => {
@@ -162,10 +175,14 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
 
                       {/* Thumbnails */}
                       {images.length > 1 && (
-                        <div className="flex gap-2 sm:gap-3 justify-center overflow-x-auto pb-2">
+                        <div 
+                          ref={thumbnailsRef}
+                          className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 px-1 scroll-smooth"
+                        >
                           {images.map((image, idx) => (
                             <button
                               key={idx}
+                              ref={(el) => { thumbnailRefs.current[idx] = el; }}
                               className={`relative flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-md sm:rounded-lg overflow-hidden border-2 transition-all hover:scale-105 active:scale-95 ${
                                 idx === selectedImageIndex
                                   ? (isWarm ? 'border-orange-500' : 'border-blue-500') + ' shadow-lg'
@@ -269,7 +286,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
               <div className="p-4 sm:p-6 md:p-8 border-t border-gray-200 bg-gray-50 rounded-b-2xl sm:rounded-b-3xl">
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <a
-                    href={`https://wa.me/77780808404?text=${encodeURIComponent(
+                    href={`https://wa.me/77750808448?text=${encodeURIComponent(
                       getProductPriceMessage(product.fullName)
                     )}`}
                     target="_blank"

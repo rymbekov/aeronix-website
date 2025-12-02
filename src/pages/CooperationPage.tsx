@@ -454,7 +454,7 @@ export default function CooperationPage() {
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center">
                   <a 
-                    href={`https://wa.me/77780808404?text=${encodeURIComponent(t('whatsapp.partnership'))}`}
+                    href={`https://wa.me/77750808448?text=${encodeURIComponent(t('whatsapp.partnership'))}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white text-aeronix-blue px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg flex items-center justify-center gap-2"
@@ -463,11 +463,11 @@ export default function CooperationPage() {
                     {t('cooperation.howto.emailCta')}
                   </a>
                   <a 
-                    href="tel:+77780808404"
+                    href="tel:+77750808448"
                     className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
                   >
                     <Phone className="w-5 h-5" />
-                    +7 778 080 84 04
+                    +7 775 080 84 48
                   </a>
                 </div>
               </div>

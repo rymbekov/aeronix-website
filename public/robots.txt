@@ -7,6 +7,9 @@ Allow: /
 # Sitemap location
 Sitemap: https://aeronix.kz/sitemap.xml
 
+# Host for Yandex
+Host: https://aeronix.kz
+
 # Block admin/private areas if any
 Disallow: /admin/
 Disallow: /private/

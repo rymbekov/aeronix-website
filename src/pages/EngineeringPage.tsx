@@ -82,7 +82,7 @@ export default function EngineeringPage() {
                   {t('engineering.hero.cta1')}
                 </Link>
                 <a
-                  href={`https://wa.me/77780808404?text=${encodeURIComponent(t('whatsapp.engineering'))}`}
+                  href={`https://wa.me/77750808448?text=${encodeURIComponent(t('whatsapp.engineering'))}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
@@ -278,11 +278,11 @@ export default function EngineeringPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+77780808404"
-                className="inline-flex items-center justify-center gap-2 bg-white text-aeronix-navy px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                href="tel:+77750808448"
+                className="inline-flex items-center gap-3 bg-white text-aeronix-navy px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg"
               >
                 <Phone className="w-5 h-5" />
-                +7 778 080 84 04
+                +7 775 080 84 48
               </a>
               <a
                 href="mailto:aeronixastana@mail.ru"
